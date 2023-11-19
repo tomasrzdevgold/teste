@@ -1,3 +1,4 @@
+ <!--
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -249,3 +250,45 @@ formulario.addEventListener('reset', (e) => {
 
 <br>
 <br>
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://localhost:3000/api/add-pets" method="post" id="">
+   nome <input type="text" name="petName">
+   dono <input type="text" name="ownerName"> <br> <br>
+
+   <select name="nombre">
+
+    <option value="to">tomas</option>
+    <option value="ro">rojas</option>
+
+   </select> 
+   
+   <br> <br>
+
+   
+    <script>
+        function Validarestado (){
+        let select = document.getElementById("estados");
+        let value = select.options[select.selectedIndex].value;
+
+        if (value=="0"){
+            campos["estados"]= false
+        } else {
+            campos["estados"] = true
+        }
+
+}
+    </script>
+
+   <input type="submit">
+</form>
+</body>
+</html>
